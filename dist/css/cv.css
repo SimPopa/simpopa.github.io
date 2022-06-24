@@ -96,3 +96,14 @@
     transform: scale(1.1);
 
   }
+
+  @media (max-width:361px) {
+
+ .cv-section{
+    width: 90%;
+    left: 20px;
+    font-size: 10px;
+
+ }
+
+}

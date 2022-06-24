@@ -56,3 +56,20 @@
   border: 2px solid rgb(208, 255, 0);
 
 }
+
+@media (max-width:361px) {
+
+  .portfolio-section{
+     width: 90%;
+     flex-direction: column;
+     left: 20px;
+     font-size: 10px;
+ 
+  }
+
+  .project {
+    width: 80%;
+    height: 20%;
+  }
+ 
+ }
