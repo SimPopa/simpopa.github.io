@@ -1,59 +1,33 @@
 
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    Padding:0;
-    list-style-type:none;
-    font-family: 'Nunito Sans', sans-serif;
-    color: white;
-}
-
-body, html {
-    height: 100vh;
-}
-
-body {
-    background-color: rgb(40, 39, 39);
-    width:100%;
-    position: relative;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-header {
-    display:flex;
-    width: 100%;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 0 50px;
-    background: linear-gradient(to right, rgba(255, 255, 255, 1),rgba(8, 120, 195, 0.553),rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
-}
-
-.cv-h3 {
-    color: black;
-}
-
-main {
-    width: 80%;
+.cv-section {
+  height: 70%;
+    width: 70%;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to bottom, rgb(59, 39, 5),rgb(0, 0, 0));
     margin-top: 30px;
+    position: absolute;
+    top: 70px;
+    left: 50px;
+    border: 2px solid orange;
+    border-radius: 5px;
+    display: none;
 
 }
 
 .work-exp {
-    width: 200px;
+    width: 300px;
     height: 150px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    border: 1px solid rgb(0, 234, 255);
+    border: 1px solid rgb(255, 225, 0);
     border-radius: 25px;
     margin: 5px;
     padding-left: 15px;
+    transition: all 1s;
 }
 
 .job-title {
@@ -68,8 +42,8 @@ main {
 
 .work-exp:hover {
     transition: all 0.5s;
-    background-color: rgb(28, 47, 43);
-    box-shadow :  -.7em .5em .4em rgba(43, 126, 228, 0.554);
+    background-color: rgb(47, 41, 28);
+    box-shadow :  -.7em .5em .4em rgba(228, 163, 43, 0.554);
     position: relative;
     top: -2px;
     top: -3px;
@@ -105,14 +79,20 @@ main {
     overflow: hidden;
     width: 300px;
     height: 100px;
-    font-size: 28px;
+    font-size: 20px;
     padding: 15px;
     margin: 30px;
     text-transform: uppercase;
     text-decoration: none;
     border-radius: 25px;
     background-color: black;
-    border: 2px solid rgb(0, 149, 255);
-    color: rgb(0, 255, 238);
+    border: 2px solid rgb(255, 208, 0);
+    color: rgb(255, 208, 0);
     letter-spacing: .3em;
+    cursor: pointer;
+    transition: all 1s;
+  }
+  .get-cv:hover {
+    transform: scale(1.1);
+
   }

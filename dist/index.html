@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simona Popa - Frontend Developer</title>
     <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <link rel="stylesheet" type="text/css" href="./css/cv.css">
+    <link rel="stylesheet" type="text/css" href="./css/portfolio.css">
     <link rel="shortcut icon" type="image/x-icon" href=""/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,9 +20,9 @@
 <body>
     <header>
         <ul class="nav-bar">
-            <li class="current-page"><a href="">HOME</a></li>
+            <!-- <li class="current-page"><a href="">HOME</a></li>
             <li><a href="">ABOUT</a></li>
-            <li><a href="">CONTACT</a></li>
+            <li><a href="">CONTACT</a></li> -->
 
         </ul>
         <ul class="shortcut-icons">
@@ -43,22 +45,107 @@
 
 
     </main>
+    <div class="cv-section" id="cv-section">
+        <div class="work-exp">
+            <div class="job-title">
+                <h4>Account Manager</h4>
+                <h5>Company: Amazon</h5>
+                <h5>Start date: May 2021</h5>
+                <h5>End date: Present</h5>
+            </div>
+            <div class="job-description">
+                <p>Key Role Tasks and Activities: <br>
+                    - Manage vendor relationships, negotiate contracts and execute pricing strategies. <br>
+                    - Identify new opportunities across a large number of brands, develop and execute project plans. <br>
+                    - Own the design, development, and maintenance of ongoing metrics, reports etc. to drive key business
+                    decisions.</p>
+            </div>
+        </div>
+        <div class="work-exp">
+            <div class="job-title">
+                <h4>Service Delivery Manager</h4>
+                <h5>Company: Safeguard Global</h5>
+                <h5>Start date: Dec 2020</h5>
+                <h5>End date: May 2021</h5>
+            </div>
+            <div class="job-description">
+                <p>Key Role Tasks and Activities: <br>
+                    - Manage vendor relationships, negotiate contracts and execute pricing strategies. <br>
+                    - Identify new opportunities across a large number of brands, develop and execute project plans. <br>
+                    - Own the design, development, and maintenance of ongoing metrics, reports etc. to drive key business
+                    decisions.</p>
+            </div>
+        </div>
+       
+
+    
+        <div class="work-exp">
+            <div class="job-title">
+                <h4>Education</h4>
+                <h5>Institution: Scoala informala de IT</h5>
+                <h5>Course: Web Development (Javascript)</h5>
+                <h5>Start date: Jan 2022</h5>
+            </div>
+            <div class="job-description">
+                <p>Key Role Tasks and Activities: <br>
+                    - HTML, CSS, Javascript <br>
+                    - Identify new opportunities across a large number of brands, develop and execute project plans. <br>
+                    - Own the design, development, and maintenance of ongoing metrics, reports etc. to drive key business
+                    decisions.</p>
+            </div>
+        </div>
+
+        <button class="get-cv" type="submit" onclick="window.open('Resume-Simona-Popa.pdf')">Download CV</button>
+    </div>
+
+    <div class="portfolio-section" id="portfolio-section">
+        <div class="project">
+                <h4>Project 1: Store page mock-up</h4>
+                <h5>Details: Responsive HTML/CSS store page mock-up</h5>
+                
+                <form action="https://google.com">
+                    <input class="external-link" type="submit" value="Go to GitHub Repo" />
+                </form>
+        </div>
+        <div class="project">
+            <h4>Project 2: Blog Section mock-up</h4>
+            <h5>Details: Simple HTML/CSS blog comment mock-up</h5>
+            
+            <form action="https://google.com">
+                <input class="external-link" type="submit" value="Go to GitHub Repo" />
+            </form>
+            
+        </div>
+        <div class="project">
+            <h4>Project 3: Timer</h4>
+            <h5>Details: Simple HTML/CSS/Javascript stopwatch</h5>
+            
+            <form action="https://google.com">
+                <input class="external-link" type="submit" value="Go to GitHub Repo" />
+            </form>
+        </div>
+        <div class="project">
+            <h4>Project 4: Slider</h4>
+            <h5>Details: Simple HTML/CSS/Javascript background slider</h5>
+            
+            <form action="https://google.com">
+                <input class="external-link" type="submit" value="Go to GitHub Repo" />
+            </form>
+        </div>
+    </div>
+
     <footer>
-        <div class="more-options">
-            <a href=""><i class="fa-solid fa-circle-book-open"></i></a>
-            <a href="">Portfolio</a>
+        <div class="more-options" id="expand-portfolio">
+            
+            <button>Portfolio</button>
             <p>View my portfolio</p>
         </div>
-        <div class="more-options">
-            <a href=""><i class="fa-solid fa-circle-book-open"></i></a>
-            <a href="./cvpage.html">CV</a>
+        <div class="more-options" id="expand-cv">
+            
+            <button>CV</button>
             <p>View work history</p>
         </div>
         <div class="more-options">
-            
-            <a href="#">Testimonials</a>
-            <p>View testimonials</p>
-        </div>
     </footer>
 
     <script src="./app.js"></script>

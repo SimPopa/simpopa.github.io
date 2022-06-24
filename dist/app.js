@@ -42,5 +42,45 @@ giveWork.addEventListener('mouseout', () => {
 })
 
 
-// Expanding CV Job details:
+// Expanding CV & Portfolio details:
+
+const getCV = document.getElementById("expand-cv")
+const cvSection = document.getElementById("cv-section")
+let cvVisibility = "none"
+
+const getPortfolio = document.getElementById("expand-portfolio")
+const portSection = document.getElementById("portfolio-section")
+let portVisibility = "none"
+
+
+getCV.addEventListener('click', () => {
+    cvSection.style.transition = "all 1s"
+    if (cvVisibility == "none") {
+        cvVisibility = "flex";
+        portVisibility = "none"
+    }
+    else {cvVisibility = "none"}
+    cvSection.style.display = cvVisibility
+    portSection.style.display = portVisibility
+
+    
+})
+
+getPortfolio.addEventListener('click', () => {
+
+    if (portVisibility == "none") {
+        portVisibility = "flex";
+        cvVisibility = "none"
+    }
+    else {
+        portVisibility = "none"
+
+    }
+    portSection.style.display = portVisibility
+    cvSection.style.display = cvVisibility
+
+
+    
+})
+
 
