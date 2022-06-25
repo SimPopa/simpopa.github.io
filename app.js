@@ -41,6 +41,10 @@ giveWork.addEventListener('mouseout', () => {
     giveWork.style.top = "5px"
 })
 
+giveWork.addEventListener('click', () => {
+    
+})
+
 
 // Expanding CV & Portfolio details:
 
