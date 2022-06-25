@@ -1,8 +1,8 @@
-// Emphasizing Navbar:
 
-const navBar = document.querySelector('.nav-bar')
 
-// Step 2: Create Interactive Hire ME button:
+
+
+// Step 1: Create Interactive Hire ME button:
 
 
 let interval =""
@@ -28,14 +28,14 @@ giveWork.addEventListener('mouseover', () => {
     giveWork.style.left = "10px"
     giveWork.style.top = "-5px"
     interval = setInterval(() =>
-        giveWork.innerText = scrambleText(originalText)
+        giveWork.innerText = scrambleText("Hire Me!")
     , 150)
 })
   
 giveWork.addEventListener('mouseout', () => {
     
     clearInterval(interval) 
-    giveWork.innerText = "Let's Interact"
+    giveWork.innerText = originalText
     giveWork.style.boxShadow = "none" 
     giveWork.style.left = "-10px"
     giveWork.style.top = "5px"
